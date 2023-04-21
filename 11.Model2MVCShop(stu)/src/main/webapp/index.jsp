@@ -39,6 +39,7 @@
 	</style>
    	<!--p{font-family: 'Gowun Batang', serif; font-size: 20px;}-->
    	<!--  ///////////////////////// JavaScript ////////////////////////// -->
+   	
 	<script type="text/javascript">
 		
 		//============= 회원원가입 화면이동 =============
@@ -166,9 +167,14 @@
         	뛰어난 예술가의 의지와 상상력으로 한 개의 대리석 속에 집어넣지 못하는 것은 없다. 미루어 보건대 다만 뛰어난 재능에 따르는 손만이 그것을 돌에 형성시킬 수 있다.
         	천가지의 기쁨이 한 가지의 괴로움만큼도 값이 없다. 지성을 따르는 손이 성취할 수 있다. 나는 아직 배우고 있다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 미켈란젤로</p>
       	</div>
+      	
+      	</div>
+      </div>
       
 		
-		
+	<div class="container-fluid">
+	
+		<div class="row">
 		<!-- carousel  Start /////////////////////////////////////-->
  	 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	        <ol class="carousel-indicators">
@@ -177,10 +183,10 @@
 	          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 	          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 	          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-	          <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+	       
 	        </ol>
-	        <div class="carousel-inner" role="listbox">
-	          <div class="item active" id="First">
+	        <div class="carousel-inner" role="listbox" >
+	          <div class="item active" id="First" >
 	            <img src="https://mdl.artvee.com/sftb/402674mt.jpg" class="img-responsive center-block" alt="First slide">
 	          </div>
 	          <div class="item" id="Second">
@@ -214,7 +220,7 @@
 		</div>
 	
 		<!-- 다단레이아웃  end /////////////////////////////////////-->
-		
+		</div>
 
 	</div>
 	<!--  화면구성 div end /////////////////////////////////////-->

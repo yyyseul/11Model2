@@ -73,7 +73,7 @@ public class ProductController {
 		
 		productService.addProduct(product);
 			
-		File saveFile = new File("C:\\workspace\\11.Model2MVCShop(stu)\\src\\main\\webapp\\images\\uploadFiles",file);
+		File saveFile = new File("C:\\Users\\YUN\\git\\11Model2\\11.Model2MVCShop(stu)\\src\\main\\webapp\\images\\uploadFiles",file);
 		
 		multipartFile.transferTo(saveFile);
 		
@@ -154,7 +154,7 @@ public class ProductController {
 		file = System.currentTimeMillis()+"_"+file;
 		product.setFileName(file);
 		
-		File saveFile = new File("C:\\workspace\\11.Model2MVCShop(stu)\\src\\main\\webapp\\images\\uploadFiles",file);
+		File saveFile = new File("C:\\Users\\YUN\\git\\11Model2\\11.Model2MVCShop(stu)\\src\\main\\webapp\\images\\uploadFiles",file);
 		
 		multipartFile.transferTo(saveFile);
 		}
