@@ -62,7 +62,7 @@ public class PurchaseController {
 	@RequestMapping(value="addPurchase", method = RequestMethod.GET)
 	public ModelAndView addPurchaseView(@RequestParam("prodNo") int prodNo, HttpSession session) throws Exception{
 		
-		System.out.println("/addPurchaseView.do");
+		System.out.println("/purchase/addPurchase : GET");
 		
 		ModelAndView modelAndView = new ModelAndView();
 
@@ -86,7 +86,7 @@ public class PurchaseController {
 	public ModelAndView addPurchase(@RequestParam("prodNo")int prodNo, @RequestParam("userId") String userId,
 									HttpServletRequest request) throws Exception{
 		
-		System.out.println("/addPurchase.do");
+		System.out.println("/purchase/addPurchase : POST");
 		
 		ModelAndView modelAndView = new ModelAndView();
 		
@@ -126,7 +126,7 @@ public class PurchaseController {
 	@RequestMapping(value = "getPurchase", method = RequestMethod.GET)
 	public ModelAndView getPurchase(@RequestParam("tranNo") int tranNo) throws Exception{
 		
-		System.out.println("/getPurchase.do");
+		System.out.println("/purchase/getPurchase");
 		
 		ModelAndView modelAndView = new ModelAndView();
 		
@@ -142,7 +142,7 @@ public class PurchaseController {
 	@RequestMapping(value = "listPurchase")
 	public ModelAndView listPurchase(@ModelAttribute("search")Search search, HttpSession session) throws Exception {
 
-		System.out.println("/listPurchase.do");
+		System.out.println("/purchase/listPurchase");
 		
 		ModelAndView modelAndView = new ModelAndView();
 		
@@ -175,7 +175,7 @@ public class PurchaseController {
 	@RequestMapping(value = "updatePurchase", method = RequestMethod.GET)
 	public ModelAndView updatePurchaseView(@RequestParam("tranNo")int tranNo) throws Exception{
 		
-		System.out.println("/updatePurchaseView.do");
+		System.out.println("/purchase/updatePurchase : GET");
 		
 		ModelAndView modelAndView = new ModelAndView();
 		
@@ -191,7 +191,7 @@ public class PurchaseController {
 	@RequestMapping(value = "updatePurchase",method = RequestMethod.POST)
 	public ModelAndView updatePurchase(@ModelAttribute("purchase")Purchase purchase) throws Exception{
 		
-		System.out.println("/updatePurchase.do");
+		System.out.println("/purchase/updatePurchase : POST");
 		
 		ModelAndView modelAndView = new ModelAndView();
 		
@@ -206,7 +206,7 @@ public class PurchaseController {
 	@RequestMapping(value = "updateTranCode",method = RequestMethod.POST)
 	public ModelAndView updateTranCode(@ModelAttribute("purchase")Purchase purchase) throws Exception{
 		
-		System.out.println("/updateTranCode.do");
+		System.out.println("/purchase/updateTranCode");
 		
 		ModelAndView modelAndView = new ModelAndView();
 		
@@ -226,7 +226,7 @@ public class PurchaseController {
 	@RequestMapping(value = "updateTranCodeByProd", method = RequestMethod.POST)
 	public ModelAndView updateTranCodeByProd(@ModelAttribute("purchase")Purchase purchase, HttpServletRequest request) throws Exception{
 		
-		System.out.println("/updateTranCodeByProd.do");
+		System.out.println("/purchase/updateTranCodeByProd");
 		
 		ModelAndView modelAndView = new ModelAndView();
 		
