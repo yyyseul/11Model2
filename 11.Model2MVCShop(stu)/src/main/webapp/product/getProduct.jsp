@@ -46,7 +46,7 @@
 		$("button.btn.btn-primary").on("click", function () {
 			<c:if test="${!empty param.menu && param.menu eq 'search'}">
 			
-			alert("구매는 아직...");
+			self.location = "/purchase/addPurchase?prodNo=${product.prodNo}"
 			
 			</c:if>
 			<c:if test="${!empty param.menu && param.menu eq 'manage'}">
